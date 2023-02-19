@@ -26,15 +26,19 @@ body {
     margin: 0 40px;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
     color: #000000;
     background: #ffffff;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline: 5px solid rgba(89, 255, 0, 0.5);
     outline-offset: -5px;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .main-header {
@@ -42,58 +46,53 @@ body {
     background: #ffffff;
     width: 1200px;
     display: flex;
-    margin: auto;
-    outline: 5px solid rgba(234, 255, 0, 0.5);
+    margin: 0 auto;
+    outline: 5px solid rgba(255, 0, 0, 0.5);
     outline-offset: -5px;
-
 }
 
 .navigation {
+    display: flex;
+    width: 892px;
+    margin: 0 auto;
     outline: 5px solid rgba(25, 0, 255, 0.5);
     outline-offset: -5px;
-    display: flex;
 }
 
 .logo {
     width: 138px;
-    margin-left: 0 auto;
+    margin-left: 70px;
     flex-grow: 0;
 }
 
 
 .navigation-list {
     display: flex;
-    width: 339px;
-    padding: 20px 16px;
-    margin-left: 30px;
-    margin-right: 285px;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    width: 323px;
     list-style-type: none;
     outline: 5px solid rgba(16, 253, 83, 0.5);
     outline-offset: -5px;
 }
+
 
 .navigation-link {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     color: #000000;
-    text-align: center;
     background-color: #ffffff;
     text-transform: capitalize;
     text-decoration: none;
-    margin: 0 16px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
 }
 
 
 .navigation-user {
-    display: flex;
     width: 268px;
-    margin-top: 0;
-    padding: 20px 16px;
-    margin-right: 70px;
+    margin-left: auto;
     list-style-type: none;
     outline: 5px solid rgba(16, 253, 83, 0.5);
     outline-offset: -5px;
@@ -103,8 +102,6 @@ body {
 .main-index {
     color: #000000;
     background-color: #ffffff;
-    /* background-image: url(/images/index-background.jpg);
-    background-repeat: no-repeat; */
     margin: 0 auto;
 }
 
@@ -120,10 +117,6 @@ body {
     outline: 5px solid rgba(255, 30, 0, 0.5);
     outline-offset: -5px;
   }
-
-.main-container {
-    flex-grow: 1;
-}
 
 .main-subtitle {
     font-size: 30px;
@@ -373,7 +366,6 @@ body {
     background-image: url(/images/catalog-background.jpg);
     background-repeat: no-repeat;
     width: 1200px;
-    /* height: 412px; Едет разметка, если указать высоту */
     color: #FFFFFF;
 }
 
@@ -387,10 +379,17 @@ body {
     line-height: 21px;
 }
 
+.catalog-filter {
+    display: flex;
+}
+
 .catalog-filter-group {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    width: 150px;
+    display: flex;
+    /* margin: 0 70px 0 70px; Как выставлять отступы ?  */
 }
 
 .catalog-filter-item {
@@ -400,8 +399,17 @@ body {
 }
 
 .product-card-catalog {
-    /* padding: 50px 70px 60px; */
+    display: flex;
     background-color: #FFFFFF;
+    outline: 5px solid rgba(81, 0, 255, 0.5);
+    outline-offset: -5px;
+}
+
+.product-list {
+    display: flex;
+    width: 1040px;
+    outline: 5px solid rgba(0, 255, 157, 0.5);
+    outline-offset: -5px;
 }
 
 .search-results {
@@ -419,6 +427,11 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #FFFFFF;
+    display: flex;
+}
+
+.hotel-card {
+    width: 300px;
 }
 
 .hotel-card-link {

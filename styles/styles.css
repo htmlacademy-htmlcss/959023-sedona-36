@@ -108,7 +108,7 @@ body {
 .hero {
     background-image: url(/images/index-background.jpg);
     background-repeat: no-repeat;
-    height: 485px;
+    min-height: 485px;
 }
 
 .page-container {
@@ -119,6 +119,14 @@ body {
   }
 
 .main-subtitle {
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 69px 274.5px;
+    margin: 0;
+}
+
+.main-subtitle h2 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -126,6 +134,8 @@ body {
     color: #000000;
     background-color: #FFFFFF;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 25px
 }
 
 .main-subtitle-description {
@@ -135,17 +145,50 @@ body {
     color: #333333;
 }
 
+.second-subtitle {
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 64px 274.5px;
+    margin: 0;
+}
+
+.second-subtitle h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px
+}
+
+.form-subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form-subtitle-description {
+    margin: 20px 0 54px 0;
+}
+
 .advantages-list {
     display: flex;
-    /* justify-content: space-between; */
-    /* width: 1200px; */
     text-align: center;
     text-transform: uppercase;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     outline: 5px solid rgba(255, 0, 204, 0.5);
     outline-offset: -5px;
+    margin: 0;
+    padding: 0;
+
 }
 
 .advantages-item {
@@ -162,29 +205,33 @@ body {
 
 .advantages-list-rigth {
     display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 .advantages-item-img-right {
     background-color: #83B3D3;
     color: #FFFFFF;
     text-align: center;
+    width: 400px;
+    height: 183px;
     text-transform: uppercase;
-    margin: 0;
+    padding: 101px 85px;
 }
 
 
 .advantages-item-food {
-    width: 400px;
     background-color: #FFFFFF;
+    padding: 112.5px 85px;
+    height: 160px;
+    width: 400px;
 }
 
 .advantages-title {
-    margin: 0;
     font-size: 24px;
     line-height: 28px;
-    padding: 112.5px  112.5px 62px 112.5px;
+    margin: 0;
+    margin-bottom: 62px;
 }
 
 
@@ -193,6 +240,9 @@ body {
     width: 400px;
     background-color: #82B3D3;
     color: #FFFFFF;
+    height: 183px;
+    text-transform: uppercase;
+    padding: 102px 85px;
 }
 
 .advantages-description {
@@ -201,6 +251,7 @@ body {
     line-height: 21px;
     color: #333333;
     text-transform: none;
+    margin: 0;
 }
 
 .advantages-item-img-right .advantages-description {
@@ -215,26 +266,24 @@ body {
 
 .card-opacity-12 {
     background-color: rgba(131, 179, 211, 0.12);
+    padding: 112.5px 85px;
+    height: 160px;
+    width: 400px;
 }
 
 .card-opacity-20 {
     background-color: rgba(131, 179, 211, 0.2);
+    padding: 112.5px 85px;
+    height: 160px;
+    width: 400px;
 }
 
 .search-hotel {
     margin: 0;
-    padding-top: 96px;
+    padding: 96px 304px;
     text-align: center;
     height: 406px;
-    /* Уточнить нужен ли тут flex */
-}
 
-.main-subtitle {
-
-}
-
-.main-subtitle-description {
-    margin: 20px 0 54px 0;
 }
 
 .button {
@@ -254,7 +303,6 @@ body {
 
 .button-search-hotel {
     display: inline-block;
-    margin-bottom: 96px;
     padding: 8px 50px;
     font-weight: 700;
     font-size: 20px;
@@ -289,21 +337,24 @@ body {
     font-size: 22px;
     background-image: url(/images/subscribe.jpg);
     width: 1200px;
-    height: 414.86px;
+    min-height: 414.86px;
     line-height: 26px;
     outline: 5px solid rgba(255, 0, 204, 0.5);
     outline-offset: -5px;
 }
 
+.subscribe-main {
+    padding: 0 258px 104px 258px;
+    margin: 0;
+}
 
 .subscribe h2 {
     font-size: 30px;
     line-height: 36px;
-    margin: 0;
-    padding: 96px 0 20px 0;
     text-transform: uppercase;
     outline: 5px solid rgba(255, 0, 204, 0.5);
     outline-offset: -5px;
+    margin: 96px 0 20px 0;
 }
 
 .subscribe p {
@@ -407,6 +458,8 @@ body {
 
 .product-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1040px;
     outline: 5px solid rgba(0, 255, 157, 0.5);
     outline-offset: -5px;
@@ -484,16 +537,23 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 26px;
+    padding: 96px 258px 104px 258px;
 }
 
 .subscribe-catalog h2 {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .subscribe-form {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+}
+
+.subscribe-catalog p {
+    margin: 0;
+    margin-bottom: 54px;
 }
